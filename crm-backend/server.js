@@ -26,7 +26,10 @@ const swaggerOptions = {
       version: '1.0.0',
       description: 'REST API for CRM system — Employee auth & Lead management',
     },
-    servers: [{ url: 'http://localhost:5001' }],
+    servers: [
+      { url: 'https://crm-backend-wmjo.onrender.com/', description: 'Production' },
+      { url: 'http://localhost:5001', description: 'Local' },
+    ],
     components: {
       securitySchemes: {
         bearerAuth: {
